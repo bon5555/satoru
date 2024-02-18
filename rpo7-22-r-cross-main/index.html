@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="logo"><img src="./images/gojo_logo.png" alt="" class="gojo_logo"></a>
+                <ul class="header-nav">
+                    <li class="nav-list">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <button id="burger-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="menuList" class="container" style="display: none;">
+            <ul class="mobile-menu">
+                <li class="menu-list">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#" class="nav-link">News</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="home">
+            <div class="container">
+                <h1 class="home-title">Сатору Годжо</h1>
+                <p class="home-description">Гордость клана Годжо, первый человек, унаследовавший и Безграничность и Шесть Глаз за четыреста лет. Сильнейший шаман современности.</p>
+               <button onclick="scrollToContainer()" class="button-outline-light">  Способности Сатору  </button>
+            </div>
+        </section>
+        <section class="last-news">
+            <div class="container" id="container2"> 
+                <h2 class="primary-title">Способности Сатору</h2>
+                <div class="news-row">
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="./images/limitless show off.jpg" alt="test">
+                        </div>
+                        <h3 class="news-title">Безграничность</h3>
+                        <h3 class="news-date">1</h3>
+                        <a class="button-primary" id="openModal">Подробнее</a>
+                        <div class="modal" id="myModal">
+                            <div class="modal-content">
+                                <img src="./images/limitless knifes.jpg" alt="Изображение" class="limitless_knifes">
+                                <h2>Безграничность</h2>
+                                <p>Техника, позволяющая бесконечно замедлять чужие атаки, так, что они попросту не достигают тела Сатору.</p>
+                                <span class="closeModal" id="closeModal">Закрыть</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="./images/blue lapse.jpg" alt="test">
+                        </div>
+                        <h3 class="news-title">Синий</h3>
+                        <h3 class="news-date">2</h3>
+                        <a class="button-primary" id="openModal2">Подробнее</a>
+                        <div class="modal2" id="myModal2">
+                            <div class="modal-content2">
+                                <img src="./images/blue lapse max.jpg" alt="Изображение" class="blue_lapse">
+                                <h2>Синий</h2>
+                                <p>Техника, получившаяся в результате усиления Бесконечности в сторону отрицательных чисел. </p>
+                                    
+                                <p>
+                                    Сатору создаёт негативное пространство, которое «притягивает» к себе окружение из-за попыток мира восстановить правильный порядок                                   
+                                </p>
+                                 <p>
+                                    (то есть убрать существование отрицательных величин).
+                                 </p>
+
+                                <span class="closeModal2" id="closeModal2">Закрыть</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="./images/reversal red.jpg" alt="test">
+                        </div>
+                        <h3 class="news-title">Красный</h3>
+                        <h3 class="news-date">3</h3>
+                        <a class="button-primary" id="openModal3">Подробнее</a>
+                     <div class="modal3" id="myModal3">
+                        <div class="modal-content3">
+                            <img src="./images/red reversal.jpg" alt="Изображение" class="red">
+                            <h2>Красный</h2>
+                            <p>Техника, инвертированная Обратной проклятой техникой,
+                            </p> 
+                            <p>
+                                что создаёт огромный взрывной вакуум, уничтожающий даже проклятий особого класса                                   
+                            </p>
+                             <p>
+                                В два раза разрушительнее «синего».
+                             </p>
+
+                            <span class="closeModal3" id="closeModal3">Закрыть</span>
+                        </div>
+                    </div> 
+                    </div>   
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="./images/hollow purple.jpg" alt="test">
+                        </div>
+                        <h3 class="news-title">Фиолетовый</h3>
+                        <h3 class="news-date">4</h3>
+                        <a class="button-primary" id="openModal4">Подробнее</a>
+                        <div class="modal4" id="myModal4">
+                           <div class="modal-content4">
+                               <img src="./images/hollow purple blast.jpg" alt="Изображение" class="purple">
+                               <h2>Фиолетовый</h2>
+                               <p>Комбинация «синего» и «красного». Мощная, опустошающая всё на своём пути техника.
+                               </p> 
+                               <p>
+                                                                      
+                               </p>
+                                <p>
+                                   
+                                </p>
+   
+                               <span class="closeModal4" id="closeModal4">Закрыть</span>
+                           </div>
+                       </div> 
+                       </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2024. Developed by Dias
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+    <script>
+        // Получаем элементы для первого модального окна
+        var modal = document.getElementById('myModal');
+        var openModalBtn = document.getElementById('openModal');
+        var closeModalBtn = document.getElementById('closeModal');
+    
+        // Открываем модальное окно
+        openModalBtn.onclick = function() {
+            modal.style.display = 'flex';
+        }
+    
+        // Закрываем модальное окно
+        closeModalBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+    
+        // Закрываем модальное окно при клике вне его
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    
+        // Получаем элементы для второго модального окна
+        var modal2 = document.getElementById('myModal2');
+        var openModalBtn2 = document.getElementById('openModal2');
+        var closeModalBtn2 = document.getElementById('closeModal2');
+    
+        // Открываем второе модальное окно
+        openModalBtn2.onclick = function() {
+            modal2.style.display = 'flex';
+        }
+    
+        // Закрываем второе модальное окно
+        closeModalBtn2.onclick = function() {
+            modal2.style.display = 'none';
+        }
+    
+        // Закрываем второе модальное окно при клике вне его
+        window.onclick = function(event) {
+            if (event.target === modal2) {
+                modal2.style.display = 'none';
+            }
+        }
+    
+        // Получаем элементы для третьего модального окна
+        var modal3 = document.getElementById('myModal3');
+        var openModalBtn3 = document.getElementById('openModal3');
+        var closeModalBtn3 = document.getElementById('closeModal3');
+    
+        // Открываем третье модальное окно
+        openModalBtn3.onclick = function() {
+            modal3.style.display = 'flex';
+        }
+    
+        // Закрываем третье модальное окно
+        closeModalBtn3.onclick = function() {
+            modal3.style.display = 'none';
+        }
+    
+        // Закрываем третье модальное окно при клике вне его
+        window.onclick = function(event) {
+            if (event.target === modal3) {
+                modal3.style.display = 'none';
+            }
+        }
+    
+        // Получаем элементы для четвертого модального окна
+        var modal4 = document.getElementById('myModal4');
+        var openModalBtn4 = document.getElementById('openModal4');
+        var closeModalBtn4 = document.getElementById('closeModal4');
+    
+        // Открываем четвертое модальное окно
+        openModalBtn4.onclick = function() {
+            modal4.style.display = 'flex';
+        }
+    
+        // Закрываем четвертое модальное окно
+        closeModalBtn4.onclick = function() {
+            modal4.style.display = 'none';
+        }
+    
+        // Закрываем четвертое модальное окно при клике вне его
+        window.onclick = function(event) {
+            if (event.target === modal4) {
+                modal4.style.display = 'none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
